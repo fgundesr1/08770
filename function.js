@@ -544,7 +544,7 @@ $(document).ready(function () {
 
             $('.selos .titulo').each(function() {
                 var txt;
-                txt = $(this).text().replace('Selos', 'Qualidade e SeguranÃ§a');
+                txt = $(this).text().replace('Selos', 'Qualidade e Segurança');
                 $(this).text(txt);
             })
         }
