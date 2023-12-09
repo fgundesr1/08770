@@ -397,7 +397,7 @@ $(document).ready(function () {
             $('.busca-mobile').addClass('span6').removeClass('span8');
             $('.busca-mobile .botao-busca').append('<svg width="20" height="20" viewBox="0 0 48 48" xmlns="http://www.w3.org/2000/svg"><g fill="#3F3E3E" fill-rule="evenodd"><path d="M22 37c8.284 0 15-6.716 15-15 0-8.284-6.716-15-15-15-8.284 0-15 6.716-15 15 0 8.284 6.716 15 15 15zm0 3c-9.941 0-18-8.059-18-18S12.059 4 22 4s18 8.059 18 18-8.059 18-18 18z" fill-rule="nonzero"></path><rect transform="rotate(-45 37.793 38.293)" x="36.293" y="32.293" width="3" height="12" rx="1.5"></rect></g></svg>');
 
-            $('#corpo .conteiner .banner.hidden-phone').removeClass('hidden-phone'), $('.pagina-produto #formCalcularCep input').attr('placeholder', 'DIGITE SEU CEP'), $('#modalNewsletter .input-conteiner input').attr('placeholder', 'Ã© sÃ³ colocar o seu e-mail aqui'), $('.pagina-produto #formCalcularCep button').html('calcular'), $('.produto .principal .cep label').html('Calcular frete e prazo:'), $('#descricao').before('<div class="description-title"><i class="far fa-file-alt"></i><span>DescriÃ§Ã£o do produto</span></div>'), $('.marcas.hidden-phone').appendTo('.pagina-inicial #corpo .conteiner'), $(".aproveite-tambem h4.titulo").text("Aproveite e compre junto"), $(".aproveite-tambem h4").prepend('<i class="far fa-plus-square"></i>'), $('.bandeiras-produto .bandeira-promocao').each(function() {
+            $('#corpo .conteiner .banner.hidden-phone').removeClass('hidden-phone'), $('.pagina-produto #formCalcularCep input').attr('placeholder', 'DIGITE SEU CEP'), $('#modalNewsletter .input-conteiner input').attr('placeholder', 'Ã© sÃ³ colocar o seu e-mail aqui'), $('.pagina-produto #formCalcularCep button').html('calcular'), $('.produto .principal .cep label').html('Calcular frete e prazo:'), $('#descricao').before('<div class="description-title"><i class="far fa-file-alt"></i><span>Descrição do produto</span></div>'), $('.marcas.hidden-phone').appendTo('.pagina-inicial #corpo .conteiner'), $(".aproveite-tambem h4.titulo").text("Aproveite e compre junto"), $(".aproveite-tambem h4").prepend('<i class="far fa-plus-square"></i>'), $('.bandeiras-produto .bandeira-promocao').each(function() {
                 var txt;
                 txt = $(this).text().replace('Desconto', '');
                 $(this).text(txt);
@@ -523,7 +523,7 @@ $(document).ready(function () {
         renameTitles = function() {
             $('.listagem .vitrine-lancamento').each(function() {
                     var txt;
-                    txt = $(this).html().replace('LanÃ§amentos', `
+                    txt = $(this).html().replace('Lançamentos', `
                             <span class="title-categorias"><strong class="primary-title">Confira</strong> <p class="second-title">nossos lanÃ§amentos</p></span>`);
                     $(this).html(txt);
                 }),
@@ -751,7 +751,7 @@ $(document).ready(function () {
                         "erro" === t.status ? $.alert({
                             theme: 'modern',
                             icon: 'fa fa-warning',
-                            title: 'Produto nÃ£o adicionado!',
+                            title: 'Produto não adicionado!',
                             type: 'red',
                             typeAnimated: true,
                             boxWidth: '50%',
