@@ -1,5 +1,5 @@
 $(document).ready(function () {
- if (window.location.href.indexOf("originalact") > -1) {
+ if (window.location.href.indexOf("") > -1) {
 	newsLetter = function() {
 			if ("undefined" != typeof newsletter) {
 				$('#rodape').prepend(`<section class="section-newsletter-home">
