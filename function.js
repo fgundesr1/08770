@@ -8,7 +8,7 @@ $(document).ready(function () {
 									            <div class="span12 text-center">
 									                <div class="newsletter">
 									                    <div class="mb-4">Newsletter</div>
-				                                            <h3 class="h1 mb-4">Receba todas as promoÃ§Ãµes</h3>
+				                                            <h3 class="h1 mb-4">Receba todas as promoções</h3>
 				                                            <span>`+ newsletter.texto +`</span>
 															<div class="newsletter-cadastro input-conteiner">
 																<input type="text" placeholder="Digite seu e-mail" name="email">
@@ -524,7 +524,7 @@ $(document).ready(function () {
             $('.listagem .vitrine-lancamento').each(function() {
                     var txt;
                     txt = $(this).html().replace('Lançamentos', `
-                            <span class="title-categorias"><strong class="primary-title">Confira</strong> <p class="second-title">nossos lanÃ§amentos</p></span>`);
+                            <span class="title-categorias"><strong class="primary-title">Confira</strong> <p class="second-title">nossos lançamentos</p></span>`);
                     $(this).html(txt);
                 }),
                 $('.listagem .vitrine-mas-vendido strong').each(function() {
