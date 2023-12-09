@@ -726,7 +726,7 @@ $(document).ready(function () {
                 }
                 $(".barra-inicial .canais-contato ul").append('<li class="productTracking"><span class="titulo"><i class="fa fa-truck"></i>Rastreio RÃ¡pido</span></li>' +
                     '<ul>' +
-                    '<p>Digite o cÃ³digo de rastreamento do pedido.</p>' +
+                    '<p>Digite o código de rastreamento do pedido.</p>' +
                     '</ul>');
 
                 $(window).scroll(function() {
@@ -1746,7 +1746,7 @@ $(document).ready(function () {
 
         rastreio = function() {
             $('body').append('<div class="modal fade hide" id="modalRastreio"> <div class="modal-header"><h3 class="modal-title">Rastreamento de pedidos</h3><button type="button" class="close" data-dismiss="modal" aria-label="Close"><i class="fa fa-times"></i></button></div><div class="modal-body"></div></div>');
-            $('#modalRastreio .modal-body').append('<form id="formRastrearObj"><input id="rastrearObj" placeholder="Digite seu cÃ³digo de rastreio"><div class="objSearch" onclick="$(this).parent().submit()"><a>Buscar</a></div></form>');
+            $('#modalRastreio .modal-body').append('<form id="formRastrearObj"><input id="rastrearObj" placeholder="Digite seu código de rastreio"><div class="objSearch" onclick="$(this).parent().submit()"><a>Buscar</a></div></form>');
 
 
             $('#formRastrearObj').on('submit', function(e) {
