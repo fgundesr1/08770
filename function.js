@@ -1,5 +1,6 @@
 $(document).ready(function () {
-		newsLetter = function() {
+ if (window.location.href.indexOf("dentologa") > -1) {
+	newsLetter = function() {
 			if ("undefined" != typeof newsletter) {
 				$('#rodape').prepend(`<section class="section-newsletter-home">
 										<div class="conteiner">
@@ -1773,4 +1774,5 @@ $(document).ready(function () {
                 })
             })
         });
+     }
 });
