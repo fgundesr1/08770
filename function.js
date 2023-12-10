@@ -717,30 +717,14 @@ $(document).ready(function () {
                 }
             });
         }
-
-        head = function() {
-            $(document).ready(function() {
-                if ($(window).width() > 1920) {
-                    var s = $("#cabecalho").height();
-                    $("#cabecalho").next().css("padding-top", s - 2)
-                }
-                $(".barra-inicial .canais-contato ul").append('<li class="productTracking"><span class="titulo"><i class="fa fa-truck"></i>Rastreio Rápido</span></li>' +
-                    '<ul>' +
-                    '<p>Digite o código de rastreamento do pedido.</p>' +
-                    '</ul>');
-
-                $(window).scroll(function() {
-                        fixedHeader()
-                    }), $('.pagina-inicial .brand').addClass('animated tada'),
                     
-		 head = function() {
-  head = function() {
+head = function() {
     $(document).ready(function() {
         if ($(window).width() > 768) {
             var s = $("#cabecalho").height();
             $("#cabecalho").next().css("padding-top", s - 2);
         }
-
+        
         $(".barra-inicial .canais-contato ul").append('<li class="productTracking"><span class="titulo"><i class="fa fa-truck"></i>Rastreio Rápido</span></li>' +
             '<ul>' +
             '<p>Digite o código de rastreamento do pedido.</p>' +
@@ -750,17 +734,25 @@ $(document).ready(function () {
             fixedHeader();
         });
 
-        if ($('.conteudo-topo .superior .span8 > div').hasClass('btn-group')) {
-            $(".my_account .login").replaceWith('<li class="login"><a href="/conta/login">Entrar</a></li>');
-            $(".my_account .registerAccount").replaceWith('<li class="registerAccount"><a href="/conta/login">Cliente novo? Cadastre-se</a></li>');
+       
+        var isLoggedIn = /* lógica para verificar se o usuário está logado */;
+        
+        if (!isLoggedIn) {
+           
+            $(".my_account").html(
+                '<svg class="user-icon" version="1.1" id="Capa_1" xmlns="http://www.w3.org/2000/svg" xmlns:xlink="http://www.w3.org/1999/xlink" x="0px" y="0px" viewBox="0 0 512 512" style="enable-background:new 0 0 512 512;" xml:space="preserve"><path d="M418.651,431.634c-8.576-56.229-45.769-103.945-98.194-125.989c42.679-35.547,48.457-98.962,12.91-141.641s-98.962-48.457-141.641-12.91s-48.457,98.962-12.91,141.641c3.904,4.69,8.229,9.006,12.91,12.91c-49.783,21.12-86.007,65.344-96.914,118.309c-2.021,9.893,4.37,19.557,14.263,21.577c9.893,2.021,19.557-4.37,21.577-14.263c14.153-69.257,81.774-113.938,151.04-99.785c52.407,10.706,92.626,52.873,100.846,105.728c1.408,8.978,9.198,15.561,18.286,15.451h2.834C413.595,450.981,420.306,441.582,418.651,431.634z M192,228.571c0-35.346,28.654-64,64-64s64,28.654,64,64s-28.654,64-64,64S192,263.918,192,228.571z"/><path d="M256,512C114.615,512,0,397.385,0,256S114.615,0,256,0s256,114.615,256,256S397.385,512,256,512z M256,36.571c-121.189,0-219.429,98.24-219.429,219.429S134.811,475.429,256,475.429S475.429,377.189,475.429,256S377.189,36.571,256,36.571z"/><g></g></svg>' +
+                '<a href="/conta/login" class="my_account-title">Minha conta</a>' +
+                '<svg class="icon-down" version="1.1" xmlns="http://www.w3.org/2000/svg" xmlns:xlink="http://www.w3.org/1999/xlink" x="0px" y="0px" width="26px" height="26px" viewBox="0 0 292.362 292.362" style="enable-background:new 0 0 292.362 292.362;" xml:space="preserve"><g><path d="M286.935,69.377c-3.614-3.617-7.898-5.424-12.848-5.424H18.274c-4.952,0-9.233,1.807-12.85,5.424C1.807,72.998,0,77.279,0,82.228c0,4.948,1.807,9.229,5.424,12.847l127.907,127.907c3.621,3.617,7.902,5.428,12.85,5.428s9.233-1.811,12.847-5.428L286.935,95.074c3.613-3.617,5.427-7.898,5.427-12.847C292.362,77.279,290.548,72.998,286.935,69.377z"/></g></svg>' +
+                '<ul>' +
+                '<li class="listAccount"><a href="/conta/pedido/listar">Meus pedidos</a></li>' +
+                '<li class="shipping"><a href="/#modalRastreio" data-toggle="modal" data-target="#modalRastreio">Acompanhar pedido</a></li>' +
+                '<li class="login"><a href="/conta/login">Entrar</a></li>' +
+                '<li class="registerAccount"><a href="/conta/cadastro">Cliente novo? Cadastre-se</a></li>' +
+                '</ul>'
+            );
         }
     });
 };
-
-
-
-            });
-        }
 
         addFavorito = function() {
             $("head").append($('<link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/jquery-confirm/3.3.0/jquery-confirm.min.css">'));
