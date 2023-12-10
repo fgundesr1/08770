@@ -736,9 +736,9 @@ head = function() {
         if (isLoggedIn) {
             // Se o usuário estiver logado, mostra opções de conta e logout
             $(".my_account").html(
-                '<svg class="user-icon" version="1.1" id="Capa_1" xmlns="http://www.w3.org/2000/svg" ...</svg>' +
+                '<svg class="user-icon" version="1.1" id="Capa_1" ...</svg>' +
                 '<a href="/conta/login" class="my_account-title">Minha conta</a>' +
-                '<svg class="icon-down" version="1.1" xmlns="http://www.w3.org/2000/svg" ...</svg>' +
+                '<svg class="icon-down" version="1.1" ...</svg>' +
                 '<ul>' +
                 '<li class="listAccount"><a href="/conta/pedido/listar">Meus pedidos</a></li>' +
                 '<li class="shipping"><a href="/#modalRastreio" data-toggle="modal" data-target="#modalRastreio">Acompanhar pedido</a></li>' +
@@ -748,18 +748,18 @@ head = function() {
         } else {
             // Se o usuário não estiver logado, mostra opções de login e registro
             $(".my_account").html(
-                '<svg class="user-icon" version="1.1" id="Capa_1" xmlns="http://www.w3.org/2000/svg" ...</svg>' +
+                '<svg class="user-icon" version="1.1" id="Capa_1" ...</svg>' +
                 '<a href="/conta/login" class="my_account-title">Minha conta</a>' +
-                '<svg class="icon-down" version="1.1" xmlns="http://www.w3.org/2000/svg" ...</svg>' +
+                '<svg class="icon-down" version="1.1" ...</svg>' +
                 '<ul>' +
                 '<li class="login"><a href="/conta/login">Entrar</a></li>' +
                 '<li class="registerAccount"><a href="/conta/criar">Criar conta</a></li>' +
+                '<li class="shipping"><a href="/#modalRastreio" data-toggle="modal" data-target="#modalRastreio">Acompanhar pedido</a></li>' +
                 '</ul>'
             );
         }
     });
 };
-
 
 
         addFavorito = function() {
