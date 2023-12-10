@@ -1,5 +1,5 @@
 $(document).ready(function () {
- if (window.location.href.indexOf("") > -1) {
+ if (window.location.href.indexOf("dentologa") > -1) {
 	newsLetter = function() {
 			if ("undefined" != typeof newsletter) {
 				$('#rodape').prepend(`<section class="section-newsletter-home">
@@ -378,17 +378,16 @@ $(document).ready(function () {
                 '</a>' +
                 '</div>' +
                 '<div class="my_account">' +
-    '<svg class="user-icon" version="1.1" id="Capa_1" xmlns="http://www.w3.org/2000/svg" xmlns:xlink="http://www.w3.org/1999/xlink" x="0px" y="0px" viewBox="0 0 512 512" style="enable-background:new 0 0 512 512;" xml:space="preserve"><path d="M418.651,431.634c-8.576-56.229-45.769-103.945-98.194-125.989c42.679-35.547,48.457-98.962,12.91-141.641s-98.962-48.457-141.641-12.91s-48.457,98.962-12.91,141.641c3.904,4.69,8.229,9.006,12.91,12.91c-49.783,21.12-86.007,65.344-96.914,118.309c-2.021,9.893,4.37,19.557,14.263,21.577c9.893,2.021,19.557-4.37,21.577-14.263c14.153-69.257,81.774-113.938,151.04-99.785c52.407,10.706,92.626,52.873,100.846,105.728c1.408,8.978,9.198,15.561,18.286,15.451h2.834C413.595,450.981,420.306,441.582,418.651,431.634z M192,228.571c0-35.346,28.654-64,64-64s64,28.654,64,64s-28.654,64-64,64S192,263.918,192,228.571z"/><path d="M256,512C114.615,512,0,397.385,0,256S114.615,0,256,0s256,114.615,256,256S397.385,512,256,512z M256,36.571c-121.189,0-219.429,98.24-219.429,219.429S134.811,475.429,256,475.429S475.429,377.189,475.429,256S377.189,36.571,256,36.571z"/><g></g></svg>' +
-    '<a href="/conta/login" class="my_account-title">Minha conta</a>' +
-    '<svg class="icon-down" version="1.1" xmlns="http://www.w3.org/2000/svg" xmlns:xlink="http://www.w3.org/1999/xlink" x="0px" y="0px" width="26px" height="26px" viewBox="0 0 292.362 292.362" style="enable-background:new 0 0 292.362 292.362;" xml:space="preserve"><g><path d="M286.935,69.377c-3.614-3.617-7.898-5.424-12.848-5.424H18.274c-4.952,0-9.233,1.807-12.85,5.424C1.807,72.998,0,77.279,0,82.228c0,4.948,1.807,9.229,5.424,12.847l127.907,127.907c3.621,3.617,7.902,5.428,12.85,5.428s9.233-1.811,12.847-5.428L286.935,95.074c3.613-3.617,5.427-7.898,5.427-12.847C292.362,77.279,290.548,72.998,286.935,69.377z"/></g></svg>' +
-    '<ul>' +
-        '<li class="listAccount"><a href="/conta/pedido/listar">Meus pedidos</a></li>' +
-        '<li class="shipping"><a href="/#modalRastreio" data-toggle="modal" data-target="#modalRastreio">Acompanhar pedido</a></li>' +
-        '<li class="listAccount"><a href="/conta/login">Entrar</a></li>' +
-        '<li class="listAccount"><a href="/conta/cadastro">Cliente novo? Cadastre-se</a></li>' + // Aqui alterei o link para criar conta para "/conta/cadastro"
-    '</ul>' +
-'</div>'+
-
+                '<svg class="user-icon" version="1.1" id="Capa_1" xmlns="http://www.w3.org/2000/svg" xmlns:xlink="http://www.w3.org/1999/xlink" x="0px" y="0px" viewBox="0 0 512 512" style="enable-background:new 0 0 512 512;" xml:space="preserve"><path d="M418.651,431.634c-8.576-56.229-45.769-103.945-98.194-125.989c42.679-35.547,48.457-98.962,12.91-141.641s-98.962-48.457-141.641-12.91s-48.457,98.962-12.91,141.641c3.904,4.69,8.229,9.006,12.91,12.91c-49.783,21.12-86.007,65.344-96.914,118.309c-2.021,9.893,4.37,19.557,14.263,21.577c9.893,2.021,19.557-4.37,21.577-14.263c14.153-69.257,81.774-113.938,151.04-99.785c52.407,10.706,92.626,52.873,100.846,105.728c1.408,8.978,9.198,15.561,18.286,15.451h2.834C413.595,450.981,420.306,441.582,418.651,431.634z M192,228.571c0-35.346,28.654-64,64-64s64,28.654,64,64s-28.654,64-64,64S192,263.918,192,228.571z"/><path d="M256,512C114.615,512,0,397.385,0,256S114.615,0,256,0s256,114.615,256,256S397.385,512,256,512z M256,36.571c-121.189,0-219.429,98.24-219.429,219.429S134.811,475.429,256,475.429S475.429,377.189,475.429,256S377.189,36.571,256,36.571z"/><g></g></svg>' +
+                '<a href="/conta/login" class="my_account-title">Minha conta</a>' +
+                '<svg class="icon-down" version="1.1" xmlns="http://www.w3.org/2000/svg" xmlns:xlink="http://www.w3.org/1999/xlink" x="0px" y="0px" width="26px" height="26px" viewBox="0 0 292.362 292.362" style="enable-background:new 0 0 292.362 292.362;" xml:space="preserve"><g><path d="M286.935,69.377c-3.614-3.617-7.898-5.424-12.848-5.424H18.274c-4.952,0-9.233,1.807-12.85,5.424C1.807,72.998,0,77.279,0,82.228c0,4.948,1.807,9.229,5.424,12.847l127.907,127.907c3.621,3.617,7.902,5.428,12.85,5.428s9.233-1.811,12.847-5.428L286.935,95.074c3.613-3.617,5.427-7.898,5.427-12.847C292.362,77.279,290.548,72.998,286.935,69.377z"/></g></svg>' +
+                '<ul>' +
+                '<li class="listAccount"><a href="/conta/pedido/listar">Meus pedidos</a></li>' +
+                '<li class="shipping"><a href="/#modalRastreio" data-toggle="modal" data-target="#modalRastreio">Acompanhar pedido</a></li>' +
+                '<li class="login"><a href="/conta/login">Entrar</a></li>' +
+                '<li class="registerAccount"><a href="/conta/login">Cliente novo? Cadastre-se</a></li>' +
+                '</ul>' +
+                '</div>' +
                 '</div>');
             $('.secao-banners').prependTo($('#corpo'));
             $('.conteiner-principal .secao-banners').find('.conteiner').removeClass('conteiner').addClass('banner-limit'), $('.secao-banners .banner-limit').find('.span12').removeClass('span12');
@@ -685,11 +684,11 @@ $(document).ready(function () {
                         .toggleClass("active");
                 });
 
-               lrMenu.start(['.nivel-um']);
+            lrMenu.start(['.nivel-um']);
             $('#cabecalho').prepend('<div class="head-mobile visible-phone"><div class="js-menu-mobile menu-mobile visible-phone"><span></span><span></span><span></span></div><div class="logo-mob"></div><div class="right-options"><div class="cart-mobile"><a href="/carrinho/index"><svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 18 23"><style>.st0{fill-rule:evenodd;clip-rule:evenodd}</style><path class="st0" d="M8.7.2c-1.1 0-2 .3-2.6.9-.6.6-1 1.4-1.2 2.2-.2.6-.3 1.1-.3 1.7H2C.9 5 0 5.9 0 7l.1 13c0 1.7 1.3 3 3 3H15c1.7 0 3-1.3 3-3V7c0-1.1-.9-2-2-2h-3.2c-.1-.6-.1-1.1-.3-1.6-.2-.8-.6-1.7-1.2-2.2-.7-.6-1.5-1-2.6-1zm2.7 6.3v2.6c0 .4.3.7.8.7.4 0 .7-.3.7-.8v-.8-1.8H16c.3 0 .5.2.5.5l-.1 13c0 .8-.7 1.5-1.5 1.5H3.1c-.8 0-1.5-.7-1.5-1.5L1.5 7c0-.3.2-.5.5-.5h2.5v2.6c0 .4.3.8.7.8.4 0 .8-.4.8-.8v-.8-1.8h5.4zM11.3 5c0-.4-.1-.8-.2-1.2-.2-.7-.4-1.2-.8-1.5-.4-.3-.8-.5-1.6-.5s-1.3.2-1.6.5c-.4.3-.6.8-.8 1.5-.1.4-.2.8-.2 1.2h5.2z"></path></svg></a></div><div class="search-mobile"><svg class="icon-head" width="20" height="20" viewBox="0 0 48 48" xmlns="http://www.w3.org/2000/svg"><g fill="#3F3E3E" fill-rule="evenodd"><path d="M22 37c8.284 0 15-6.716 15-15 0-8.284-6.716-15-15-15-8.284 0-15 6.716-15 15 0 8.284 6.716 15 15 15zm0 3c-9.941 0-18-8.059-18-18S12.059 4 22 4s18 8.059 18 18-8.059 18-18 18z" fill-rule="nonzero"></path><rect transform="rotate(-45 37.793 38.293)" x="36.293" y="32.293" width="3" height="12" rx="1.5"></rect></g></svg></div><div class="user-mobile"><a href="/conta/login"><svg class="icon-head" xmlns="http://www.w3.org/2000/svg" viewBox="0 0 24 24"><path class="st0" d="M12 12.5C9 12.5 6.5 10 6.5 7S9 1.5 12 1.5 17.5 4 17.5 7 15 12.5 12 12.5zM12 3C9.8 3 8 4.8 8 7s1.8 4 4 4 4-1.8 4-4-1.8-4-4-4zM17 15.5c1.4 0 2.5 1.1 2.5 2.5v2.5h-15V18c0-1.4 1.1-2.5 2.5-2.5h10m0-1.5H7c-2.2 0-4 1.8-4 4v4h18v-4c0-2.2-1.8-4-4-4z"></path></svg></a></div></div></div>');
             $(".logo-mob").append($(".logo").clone(''));
             $('#rodape .selos').addClass('span4').removeClass('span3');
-            $('.lrMenu').prepend('<form id="formRastrearObj"><span>Rastrear pedido</span><div class="rastMobile"><input id="rastrearObjMobile" placeholder="Digite seu cÃ³digo de rastreio."><div class="objSearch" onclick="$(this).parent().submit()"><a>Buscar</a></div></div></form>');
+            $('.lrMenu').prepend('<form id="formRastrearObj"><span>Rastrear pedido</span><div class="rastMobile"><input id="rastrearObjMobile" placeholder="Digite seu código de rastreio."><div class="objSearch" onclick="$(this).parent().submit()"><a>Buscar</a></div></div></form>');
             $('.rastMobile').on('submit', function(e) {
                 setTimeout(function() {
                     e.preventDefault();
@@ -718,39 +717,24 @@ $(document).ready(function () {
                 }
             });
         }
-                    
-head = function() {
-    $(document).ready(function() {
-        if ($(window).width() > 768) {
-            var s = $("#cabecalho").height();
-            $("#cabecalho").next().css("padding-top", s - 2);
+
+        head = function() {
+            $(document).ready(function() {
+                if ($(window).width() > 768) {
+                    var s = $("#cabecalho").height();
+                    $("#cabecalho").next().css("padding-top", s - 2)
+                }
+                $(".barra-inicial .canais-contato ul").append('<li class="productTracking"><span class="titulo"><i class="fa fa-truck"></i>Rastreio RÃ¡pido</span></li>' +
+                    '<ul>' +
+                    '<p>Digite o código de rastreamento do pedido.</p>' +
+                    '</ul>');
+
+                $(window).scroll(function() {
+                        fixedHeader()
+                    }), $('.pagina-inicial .brand').addClass('animated tada'),
+                    $(".conteudo-topo .superior .span8 > div").hasClass("btn-group") && $(".my_account .login").replaceWith('<li class="login"><a href="/conta/logout">Sair' + "</a></li>"), $(".conteudo-topo .superior .span8 > div").hasClass("btn-group") && $(".my_account .registerAccount").remove()
+            });
         }
-
-        $(".barra-inicial .canais-contato ul").append('<li class="productTracking"><span class="titulo"><i class="fa fa-truck"></i>Rastreio Rápido</span></li>' +
-            '<ul>' +
-            '<p>Digite o código de rastreamento do pedido.</p>' +
-            '</ul>');
-
-        $(window).scroll(function() {
-            fixedHeader();
-        });
-
-        if ($('.conteudo-topo .superior .span8 > div').hasClass('btn-group')) {
-            $('.my_account').html(
-                '<svg class="user-icon" version="1.1" id="Capa_1" xmlns="http://www.w3.org/2000/svg" xmlns:xlink="http://www.w3.org/1999/xlink" x="0px" y="0px" viewBox="0 0 512 512" style="enable-background:new 0 0 512 512;" xml:space="preserve"><path d="M418.651,431.634c-8.576-56.229-45.769-103.945-98.194-125.989c42.679-35.547,48.457-98.962,12.91-141.641s-98.962-48.457-141.641-12.91s-48.457,98.962-12.91,141.641c3.904,4.69,8.229,9.006,12.91,12.91c-49.783,21.12-86.007,65.344-96.914,118.309c-2.021,9.893,4.37,19.557,14.263,21.577c9.893,2.021,19.557-4.37,21.577-14.263c14.153-69.257,81.774-113.938,151.04-99.785c52.407,10.706,92.626,52.873,100.846,105.728c1.408,8.978,9.198,15.561,18.286,15.451h2.834C413.595,450.981,420.306,441.582,418.651,431.634z M192,228.571c0-35.346,28.654-64,64-64s64,28.654,64,64s-28.654,64-64,64S192,263.918,192,228.571z"/><path d="M256,512C114.615,512,0,397.385,0,256S114.615,0,256,0s256,114.615,256,256S397.385,512,256,512z M256,36.571c-121.189,0-219.429,98.24-219.429,219.429S134.811,475.429,256,475.429S475.429,377.189,475.429,256S377.189,36.571,256,36.571z"/><g></g></svg>' +
-                '<a href="/conta/login" class="my_account-title">Minha conta</a>' +
-                '<svg class="icon-down" version="1.1" xmlns="http://www.w3.org/2000/svg" xmlns:xlink="http://www.w3.org/1999/xlink" x="0px" y="0px" width="26px" height="26px" viewBox="0 0 292.362 292.362" style="enable-background:new 0 0 292.362 292.362;" xml:space="preserve"><g><path d="M286.935,69.377c-3.614-3.617-7.898-5.424-12.848-5.424H18.274c-4.952,0-9.233,1.807-12.85,5.424C1.807,72.998,0,77.279,0,82.228c0,4.948,1.807,9.229,5.424,12.847l127.907,127.907c3.621,3.617,7.902,5.428,12.85,5.428s9.233-1.811,12.847-5.428L286.935,95.074c3.613-3.617,5.427-7.898,5.427-12.847C292.362,77.279,290.548,72.998,286.935,69.377z"/></g></svg>' +
-                '<ul>' +
-                '<li class="listAccount"><a href="/conta/pedido/listar">Meus pedidos</a></li>' +
-                '<li class="shipping"><a href="/#modalRastreio" data-toggle="modal" data-target="#modalRastreio">Acompanhar pedido</a></li>' +
-                '<li class="login"><a href="/conta/login">Entrar</a></li>' +
-                '<li class="registerAccount"><a href="/conta/cadastro">Cliente novo? Cadastre-se</a></li>' +
-                '</ul>'
-            );
-        }
-    });
-};
-
 
         addFavorito = function() {
             $("head").append($('<link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/jquery-confirm/3.3.0/jquery-confirm.min.css">'));
