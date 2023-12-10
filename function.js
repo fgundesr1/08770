@@ -384,8 +384,8 @@ $(document).ready(function () {
     '<ul>' +
         '<li class="listAccount"><a href="/conta/pedido/listar">Meus pedidos</a></li>' +
         '<li class="shipping"><a href="/#modalRastreio" data-toggle="modal" data-target="#modalRastreio">Acompanhar pedido</a></li>' +
-        '<li class="login"><a href="/conta/login">Entrar</a></li>' +
-        '<li class="registerAccount"><a href="/conta/cadastro">Cliente novo? Cadastre-se</a></li>' + // Aqui alterei o link para criar conta para "/conta/cadastro"
+        '<li class="listAccount"><a href="/conta/login">Entrar</a></li>' +
+        '<li class="listAccount"><a href="/conta/cadastro">Cliente novo? Cadastre-se</a></li>' + // Aqui alterei o link para criar conta para "/conta/cadastro"
     '</ul>' +
 '</div>'+
 
