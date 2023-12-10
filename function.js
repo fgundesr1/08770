@@ -732,7 +732,10 @@ $(document).ready(function () {
                 $(window).scroll(function() {
                         fixedHeader()
                     }), $('.pagina-inicial .brand').addClass('animated tada'),
-                    $(".conteudo-topo .superior .span8 > div").hasClass("btn-group") && $(".my_account .login").replaceWith('<li class="login"><a href="/conta/logout">Sair' + "</a></li>"), $(".conteudo-topo .superior .span8 > div").hasClass("btn-group") && $(".my_account .registerAccount").remove()
+                    
+		    $(".conteudo-topo .superior .span8 > div").hasClass("btn-group") && $(".my_account .login").replaceWith('<li class="login"><a href="/conta/logout">Sair' + "</a></li>");
+$(".conteudo-topo .superior .span8 > div").hasClass("btn-group") && $(".my_account .registerAccount").remove();
+
             });
         }
 
