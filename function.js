@@ -733,8 +733,31 @@ $(document).ready(function () {
                         fixedHeader()
                     }), $('.pagina-inicial .brand').addClass('animated tada'),
                     
-		    $(".conteudo-topo .superior .span8 > div").hasClass("btn-group") && $(".my_account .login").replaceWith('<li class="login"><a href="/conta/logout">Sair' + "</a></li>");
-$(".conteudo-topo .superior .span8 > div").hasClass("btn-group") && $(".my_account .registerAccount").remove();
+		 head = function() {
+  head = function() {
+    $(document).ready(function() {
+        if ($(window).width() > 768) {
+            var s = $("#cabecalho").height();
+            $("#cabecalho").next().css("padding-top", s - 2);
+        }
+
+        $(".barra-inicial .canais-contato ul").append('<li class="productTracking"><span class="titulo"><i class="fa fa-truck"></i>Rastreio Rápido</span></li>' +
+            '<ul>' +
+            '<p>Digite o código de rastreamento do pedido.</p>' +
+            '</ul>');
+
+        $(window).scroll(function() {
+            fixedHeader();
+        });
+
+        if ($('.conteudo-topo .superior .span8 > div').hasClass('btn-group')) {
+            $(".my_account .login").replaceWith('<li class="login"><a href="/conta/login">Entrar</a></li>');
+            $(".my_account .registerAccount").replaceWith('<li class="registerAccount"><a href="/conta/login">Cliente novo? Cadastre-se</a></li>');
+        }
+    });
+};
+
+
 
             });
         }
