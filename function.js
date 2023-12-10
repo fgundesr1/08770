@@ -720,11 +720,11 @@ $(document).ready(function () {
 
         head = function() {
             $(document).ready(function() {
-                if ($(window).width() > 768) {
+                if ($(window).width() > 1920) {
                     var s = $("#cabecalho").height();
                     $("#cabecalho").next().css("padding-top", s - 2)
                 }
-                $(".barra-inicial .canais-contato ul").append('<li class="productTracking"><span class="titulo"><i class="fa fa-truck"></i>Rastreio RÃ¡pido</span></li>' +
+                $(".barra-inicial .canais-contato ul").append('<li class="productTracking"><span class="titulo"><i class="fa fa-truck"></i>Rastreio Rápido</span></li>' +
                     '<ul>' +
                     '<p>Digite o código de rastreamento do pedido.</p>' +
                     '</ul>');
