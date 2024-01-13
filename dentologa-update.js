@@ -145,10 +145,10 @@ $(document).ready(function() {
         let tagEmbedCss = $('link[href="https://widget.tagembed.com/widget/static/css/react-build.css"]');
         if (tagEmbedCss.length) {
             tagEmbedCss[0].disabled = true;
-            console.log('Plugoo: Removed unnecessary CSS from TagEmbed');
+            console.log('Removed unnecessary CSS from TagEmbed');
             clearInterval(interval);
         } else {
-            console.log('Plugoo: TagEmbed CSS not found');
+            console.log('TagEmbed CSS not found');
 
             if (typeof instagramFeed !== 'undefined') {
                 if (instagramFeed.ativa === true) {
