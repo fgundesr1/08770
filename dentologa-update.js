@@ -1,8 +1,3 @@
-// rodar script se a url possuir a palavra "ok"
-
-
-
-
 if ($(".pagina-produto").length && typeof tabelaMedidas !== "undefined") {
     let imagemTabela = tabelaMedidas.imagem;
     let atributos = $(".pagina-produto .principal .acoes-produto");
@@ -40,7 +35,7 @@ if ($(".pagina-produto").length && typeof tabelaMedidas !== "undefined") {
     })
 }
 
-// LOGO DE PARCEIROS
+
 var _0x13f6f5 = _0x3377;
 
 function _0x11c2() {
@@ -145,7 +140,7 @@ $(document).ready(function() {
         let tagEmbedCss = $('link[href="https://widget.tagembed.com/widget/static/css/react-build.css"]');
         if (tagEmbedCss.length) {
             tagEmbedCss[0].disabled = true;
-            console.log('Removed unnecessary CSS from TagEmbed');
+            console.log(' Removed unnecessary CSS from TagEmbed');
             clearInterval(interval);
         } else {
             console.log('TagEmbed CSS not found');
@@ -170,21 +165,21 @@ $(document).ready(function() {
     }, 300);
 });
 
-// FullBanners
+
 if (typeof resolutionBanner !== 'undefined' && resolutionBanner.condition === true) {
     var fBanner = $('.full-banners');
     if (fBanner.length) {
-        // for em cada imagem do banner
+        
         fBanner.find('img').each(function() {
-            // pega o src da imagem
+           
             var src = $(this).attr('src');
-            // cria um novo elemento de imagem
+           
             var img = $('<img />');
-            // adiciona o src da imagem no novo elemento
+         
             img.attr('src', src);
-            // replace da qualidade da imagem de 1140x1140 por 1920x1920
+            
             img.attr('src', img.attr('src').replace('1140x1140', '1920x1920'));
-            // trocar a imagem antiga pela nova em cada banner
+            
             $(this).replaceWith(img);
         });
     }
@@ -200,7 +195,7 @@ window.onload = function() {
     }
 }
 
-// NOVO CDN - AJUSTES NO MINHA CONTA
+
 $('.my_account ul').hide();
 
 function newAccountDesktop() {
